@@ -1,11 +1,14 @@
 package guru.springframework.spring5webapp.domain;
 
+import org.hibernate.envers.Audited;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
+@Audited
 public class Publisher {
 
     @Id
